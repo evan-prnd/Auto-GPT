@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
 
 # Install utilities
 RUN apt-get update && apt-get install -y \
-    curl jq wget git \
+    gcc curl jq wget git \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Set environment variables
